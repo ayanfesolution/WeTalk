@@ -17,6 +17,9 @@
 		0431287B28693BEC002B5FB7 /* WeTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431287A28693BEC002B5FB7 /* WeTalkUITests.swift */; };
 		0431287D28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431287C28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift */; };
 		046FF34928693E6E000041BC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 046FF34828693E6E000041BC /* Lottie */; };
+		046FF3562869B04B000041BC /* PublicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FF3552869B04B000041BC /* PublicConstants.swift */; };
+		046FF3572869B04B000041BC /* PublicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FF3552869B04B000041BC /* PublicConstants.swift */; };
+		046FF3582869B04B000041BC /* PublicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FF3552869B04B000041BC /* PublicConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,7 @@
 		0431287628693BEC002B5FB7 /* WeTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0431287A28693BEC002B5FB7 /* WeTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeTalkUITests.swift; sourceTree = "<group>"; };
 		0431287C28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeTalkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		046FF3552869B04B000041BC /* PublicConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				0431285828693BE8002B5FB7 /* WeTalk */,
 				0431286F28693BEC002B5FB7 /* WeTalkTests */,
 				0431287928693BEC002B5FB7 /* WeTalkUITests */,
+				0431286728693BEC002B5FB7 /* Info.plist */,
 				0431285728693BE8002B5FB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,13 +106,15 @@
 		0431285828693BE8002B5FB7 /* WeTalk */ = {
 			isa = PBXGroup;
 			children = (
-				0431285928693BE8002B5FB7 /* AppDelegate.swift */,
-				0431285B28693BE8002B5FB7 /* SceneDelegate.swift */,
-				0431285D28693BE8002B5FB7 /* ViewController.swift */,
-				0431285F28693BE8002B5FB7 /* Main.storyboard */,
-				0431286228693BEC002B5FB7 /* Assets.xcassets */,
-				0431286428693BEC002B5FB7 /* LaunchScreen.storyboard */,
-				0431286728693BEC002B5FB7 /* Info.plist */,
+				046FF3542869AFBF000041BC /* Common */,
+				046FF3532869AFA8000041BC /* ViewModel */,
+				046FF34F2869ADF7000041BC /* Protocols */,
+				046FF34E2869AB03000041BC /* Extensions */,
+				046FF34A2869AA82000041BC /* Delegates */,
+				046FF34B2869AA94000041BC /* Controllers */,
+				046FF34D2869AACE000041BC /* Resources */,
+				046FF34C2869AAA7000041BC /* StoryBoard */,
+				046FF3512869AF6F000041BC /* Model */,
 			);
 			path = WeTalk;
 			sourceTree = "<group>";
@@ -127,6 +134,92 @@
 				0431287C28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift */,
 			);
 			path = WeTalkUITests;
+			sourceTree = "<group>";
+		};
+		046FF34A2869AA82000041BC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0431285B28693BE8002B5FB7 /* SceneDelegate.swift */,
+				0431285928693BE8002B5FB7 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		046FF34B2869AA94000041BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0431285D28693BE8002B5FB7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		046FF34C2869AAA7000041BC /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0431286428693BEC002B5FB7 /* LaunchScreen.storyboard */,
+				0431285F28693BE8002B5FB7 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		046FF34D2869AACE000041BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				046FF3522869AF92000041BC /* Fonts */,
+				046FF3502869AF62000041BC /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		046FF34E2869AB03000041BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		046FF34F2869ADF7000041BC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		046FF3502869AF62000041BC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0431286228693BEC002B5FB7 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		046FF3512869AF6F000041BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046FF3522869AF92000041BC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		046FF3532869AFA8000041BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		046FF3542869AFBF000041BC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				046FF3552869B04B000041BC /* PublicConstants.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046FF3562869B04B000041BC /* PublicConstants.swift in Sources */,
 				0431285E28693BE8002B5FB7 /* ViewController.swift in Sources */,
 				0431285A28693BE8002B5FB7 /* AppDelegate.swift in Sources */,
 				0431285C28693BE8002B5FB7 /* SceneDelegate.swift in Sources */,
@@ -276,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046FF3572869B04B000041BC /* PublicConstants.swift in Sources */,
 				0431287128693BEC002B5FB7 /* WeTalkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431287D28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift in Sources */,
+				046FF3582869B04B000041BC /* PublicConstants.swift in Sources */,
 				0431287B28693BEC002B5FB7 /* WeTalkUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
