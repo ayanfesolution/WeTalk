@@ -16,6 +16,7 @@
 		0431287128693BEC002B5FB7 /* WeTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431287028693BEC002B5FB7 /* WeTalkTests.swift */; };
 		0431287B28693BEC002B5FB7 /* WeTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431287A28693BEC002B5FB7 /* WeTalkUITests.swift */; };
 		0431287D28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431287C28693BEC002B5FB7 /* WeTalkUITestsLaunchTests.swift */; };
+		046FF34928693E6E000041BC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 046FF34828693E6E000041BC /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046FF34928693E6E000041BC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = WeTalk;
+			packageProductDependencies = (
+				046FF34828693E6E000041BC /* Lottie */,
+			);
 			productName = WeTalk;
 			productReference = 0431285628693BE8002B5FB7 /* WeTalk.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 0431284D28693BE8002B5FB7;
+			packageReferences = (
+				046FF34728693E6E000041BC /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 0431285728693BE8002B5FB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		046FF34728693E6E000041BC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		046FF34828693E6E000041BC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046FF34728693E6E000041BC /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0431284E28693BE8002B5FB7 /* Project object */;
 }
